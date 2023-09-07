@@ -7,8 +7,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['http://localhost:3000'],  # Разрешенные источники (указывайте адрес вашего фронтенда)
-    allow_origins=['https://showchinese.ru'],  # Разрешенные источники (указывайте адрес вашего фронтенда)
+    allow_origins=['http://localhost:3000', 'https://showchinese.ru'],  # Разрешенные источники (указывайте адрес вашего фронтенда)
     allow_methods=['*'],  # Разрешенные HTTP-методы (в данном случае все)
     allow_headers=['*'],  # Разрешенные HTTP-заголовки (в данном случае все)
     allow_credentials=True,  # Разрешить отправку куки и заголовка авторизации
